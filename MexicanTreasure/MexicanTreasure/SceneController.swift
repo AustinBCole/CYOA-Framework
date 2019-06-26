@@ -57,11 +57,15 @@ class SceneController {
     private func getScene(tag: Int) -> Scene {
         return sceneArray[tag - 1]
     }
-    private func getSceneChoices(currentScene: Scene) {
-        let choicesArray: Array<Choice> = []
+    private func getNextScenes(currentScene: Scene) {
+        var scenesArray: Array<Scene> = []
         if adjacencyDictionary[currentScene.unique_id]?.count != 0 {
             for uniqueID in adjacencyDictionary[currentScene.unique_id]! {
-                for scene in sceneArray[tag - 1:]
+                for scene in sceneArray {
+                    if uniqueID == scene.unique_id {
+                        scenesArray.append(scene)
+                    }
+                }
             }
         }
     }
