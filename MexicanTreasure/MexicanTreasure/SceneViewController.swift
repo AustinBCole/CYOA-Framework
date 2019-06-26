@@ -15,6 +15,24 @@ class SceneViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    
+    
+    
+    
+    //MARK: Private Methods
+    
+    private func getHeightForLabel(text: String, font: UIFont) -> CGFloat {
+        let label = UILabel(frame: CGRect(x: 8, y: 8, width: view.frame.width - 16, height: CGFloat.greatestFiniteMagnitude))
+        label.numberOfLines = 0
+        label.lineBreakMode = NSLineBreakMode.byWordWrapping
+        label.font = font
+        label.text = text
+        
+        label.sizeToFit()
+        
+        return label.frame.height
+    }
 
 
     /*

@@ -19,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         SceneController.shared.createScenes()
         
+        let rootViewController = SceneViewController()
+        
+        window!.rootViewController = rootViewController
+        
         
         
         return true
