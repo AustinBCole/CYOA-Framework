@@ -8,13 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		A2B876DA22C18129008FDBB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B876D922C18129008FDBB3 /* AppDelegate.swift */; };
-		A2B876DC22C18129008FDBB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B876DB22C18129008FDBB3 /* ViewController.swift */; };
-		A2B876DF22C18129008FDBB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B876DD22C18129008FDBB3 /* Main.storyboard */; };
 		A2B876E122C1812B008FDBB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2B876E022C1812B008FDBB3 /* Assets.xcassets */; };
 		A2B876E422C1812B008FDBB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B876E222C1812B008FDBB3 /* LaunchScreen.storyboard */; };
 		A2B876EC22C183A2008FDBB3 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B876EB22C183A2008FDBB3 /* Scene.swift */; };
 		A2B876EE22C183A8008FDBB3 /* SceneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B876ED22C183A8008FDBB3 /* SceneController.swift */; };
-		A2B876F022C28015008FDBB3 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B876EF22C28015008FDBB3 /* Player.swift */; };
+		A2B876F022C28015008FDBB3 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B876EF22C28015008FDBB3 /* Character.swift */; };
 		A2B876F222C28020008FDBB3 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B876F122C28020008FDBB3 /* Choice.swift */; };
 		A2B876F422C28109008FDBB3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B876F322C28109008FDBB3 /* Item.swift */; };
 		A2B876F622C28197008FDBB3 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B876F522C28197008FDBB3 /* Stat.swift */; };
@@ -33,19 +31,19 @@
 		A2B8771222C2DDA2008FDBB3 /* 2robber.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2B8770322C2DDA2008FDBB3 /* 2robber.txt */; };
 		A2B8771322C2DDA2008FDBB3 /* 5theft.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2B8770422C2DDA2008FDBB3 /* 5theft.txt */; };
 		A2B8771422C2DDA2008FDBB3 /* 8flee.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2B8770522C2DDA2008FDBB3 /* 8flee.txt */; };
+		A2B8771722C2EB8B008FDBB3 /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B8771522C2EB8B008FDBB3 /* SceneViewController.swift */; };
+		A2B8771B22C41CD2008FDBB3 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B8771A22C41CD2008FDBB3 /* Graph.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A2B876D622C18129008FDBB3 /* MexicanTreasure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MexicanTreasure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2B876D922C18129008FDBB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A2B876DB22C18129008FDBB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A2B876DE22C18129008FDBB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2B876E022C1812B008FDBB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2B876E322C1812B008FDBB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2B876E522C1812B008FDBB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2B876EB22C183A2008FDBB3 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		A2B876ED22C183A8008FDBB3 /* SceneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneController.swift; sourceTree = "<group>"; };
-		A2B876EF22C28015008FDBB3 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		A2B876EF22C28015008FDBB3 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		A2B876F122C28020008FDBB3 /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
 		A2B876F322C28109008FDBB3 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A2B876F522C28197008FDBB3 /* Stat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stat.swift; sourceTree = "<group>"; };
@@ -64,6 +62,8 @@
 		A2B8770322C2DDA2008FDBB3 /* 2robber.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2robber.txt; sourceTree = "<group>"; };
 		A2B8770422C2DDA2008FDBB3 /* 5theft.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 5theft.txt; sourceTree = "<group>"; };
 		A2B8770522C2DDA2008FDBB3 /* 8flee.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 8flee.txt; sourceTree = "<group>"; };
+		A2B8771522C2EB8B008FDBB3 /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewController.swift; sourceTree = "<group>"; };
+		A2B8771A22C41CD2008FDBB3 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,14 +112,14 @@
 			isa = PBXGroup;
 			children = (
 				A2B876D922C18129008FDBB3 /* AppDelegate.swift */,
-				A2B876DB22C18129008FDBB3 /* ViewController.swift */,
 				A2B876EB22C183A2008FDBB3 /* Scene.swift */,
 				A2B876ED22C183A8008FDBB3 /* SceneController.swift */,
-				A2B876EF22C28015008FDBB3 /* Player.swift */,
+				A2B8771A22C41CD2008FDBB3 /* Graph.swift */,
+				A2B876EF22C28015008FDBB3 /* Character.swift */,
 				A2B876F522C28197008FDBB3 /* Stat.swift */,
 				A2B876F322C28109008FDBB3 /* Item.swift */,
 				A2B876F122C28020008FDBB3 /* Choice.swift */,
-				A2B876DD22C18129008FDBB3 /* Main.storyboard */,
+				A2B8771522C2EB8B008FDBB3 /* SceneViewController.swift */,
 				A2B876E022C1812B008FDBB3 /* Assets.xcassets */,
 				A2B876E222C1812B008FDBB3 /* LaunchScreen.storyboard */,
 				A2B876E522C1812B008FDBB3 /* Info.plist */,
@@ -196,7 +196,6 @@
 				A2B8770B22C2DDA2008FDBB3 /* 10robber_together_get_it.txt in Resources */,
 				A2B8771222C2DDA2008FDBB3 /* 2robber.txt in Resources */,
 				A2B876E122C1812B008FDBB3 /* Assets.xcassets in Resources */,
-				A2B876DF22C18129008FDBB3 /* Main.storyboard in Resources */,
 				A2B8770622C2DDA2008FDBB3 /* 15friend_scout.txt in Resources */,
 				A2B8770922C2DDA2008FDBB3 /* 12robber_alone.txt in Resources */,
 				A2B8770E22C2DDA2008FDBB3 /* 9fly_alone.txt in Resources */,
@@ -214,12 +213,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2B876F222C28020008FDBB3 /* Choice.swift in Sources */,
+				A2B8771722C2EB8B008FDBB3 /* SceneViewController.swift in Sources */,
 				A2B876F622C28197008FDBB3 /* Stat.swift in Sources */,
-				A2B876DC22C18129008FDBB3 /* ViewController.swift in Sources */,
 				A2B876DA22C18129008FDBB3 /* AppDelegate.swift in Sources */,
 				A2B876EE22C183A8008FDBB3 /* SceneController.swift in Sources */,
 				A2B876F422C28109008FDBB3 /* Item.swift in Sources */,
-				A2B876F022C28015008FDBB3 /* Player.swift in Sources */,
+				A2B8771B22C41CD2008FDBB3 /* Graph.swift in Sources */,
+				A2B876F022C28015008FDBB3 /* Character.swift in Sources */,
 				A2B876EC22C183A2008FDBB3 /* Scene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,14 +227,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A2B876DD22C18129008FDBB3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A2B876DE22C18129008FDBB3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A2B876E222C1812B008FDBB3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

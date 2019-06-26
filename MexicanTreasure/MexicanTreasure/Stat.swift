@@ -11,8 +11,8 @@ import Foundation
 class Stat {
     
     init(withTuple: (String, Int)){
-        self.name = tuple.0
-        self.value = tuple.1
+        self.name = withTuple.0
+        self.value = withTuple.1
     }
     
     let name: String
