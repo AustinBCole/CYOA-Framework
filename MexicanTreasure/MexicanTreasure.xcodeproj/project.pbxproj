@@ -31,6 +31,8 @@
 		A2B8771222C2DDA2008FDBB3 /* 2robber.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2B8770322C2DDA2008FDBB3 /* 2robber.txt */; };
 		A2B8771322C2DDA2008FDBB3 /* 5theft.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2B8770422C2DDA2008FDBB3 /* 5theft.txt */; };
 		A2B8771422C2DDA2008FDBB3 /* 8flee.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2B8770522C2DDA2008FDBB3 /* 8flee.txt */; };
+		A2B8771722C2EB8B008FDBB3 /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B8771522C2EB8B008FDBB3 /* SceneViewController.swift */; };
+		A2B8771822C2EB8B008FDBB3 /* SceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2B8771622C2EB8B008FDBB3 /* SceneViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		A2B8770322C2DDA2008FDBB3 /* 2robber.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2robber.txt; sourceTree = "<group>"; };
 		A2B8770422C2DDA2008FDBB3 /* 5theft.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 5theft.txt; sourceTree = "<group>"; };
 		A2B8770522C2DDA2008FDBB3 /* 8flee.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 8flee.txt; sourceTree = "<group>"; };
+		A2B8771522C2EB8B008FDBB3 /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneViewController.swift; path = MexicanTreasure/SceneViewController.swift; sourceTree = "<group>"; };
+		A2B8771622C2EB8B008FDBB3 /* SceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SceneViewController.xib; path = MexicanTreasure/SceneViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 		A2B876CD22C18129008FDBB3 = {
 			isa = PBXGroup;
 			children = (
+				A2B8771522C2EB8B008FDBB3 /* SceneViewController.swift */,
+				A2B8771622C2EB8B008FDBB3 /* SceneViewController.xib */,
 				A2B876D822C18129008FDBB3 /* MexicanTreasure */,
 				A2B876D722C18129008FDBB3 /* Products */,
 				A2B876FD22C2DDA1008FDBB3 /* 1opening.txt */,
@@ -192,6 +198,7 @@
 				A2B876E122C1812B008FDBB3 /* Assets.xcassets in Resources */,
 				A2B8770622C2DDA2008FDBB3 /* 15friend_scout.txt in Resources */,
 				A2B8770922C2DDA2008FDBB3 /* 12robber_alone.txt in Resources */,
+				A2B8771822C2EB8B008FDBB3 /* SceneViewController.xib in Resources */,
 				A2B8770E22C2DDA2008FDBB3 /* 9fly_alone.txt in Resources */,
 				A2B8770D22C2DDA2008FDBB3 /* 11robber_scout.txt in Resources */,
 				A2B8771022C2DDA2008FDBB3 /* 6friend.txt in Resources */,
@@ -207,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2B876F222C28020008FDBB3 /* Choice.swift in Sources */,
+				A2B8771722C2EB8B008FDBB3 /* SceneViewController.swift in Sources */,
 				A2B876F622C28197008FDBB3 /* Stat.swift in Sources */,
 				A2B876DA22C18129008FDBB3 /* AppDelegate.swift in Sources */,
 				A2B876EE22C183A8008FDBB3 /* SceneController.swift in Sources */,
