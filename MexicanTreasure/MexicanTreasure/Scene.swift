@@ -8,8 +8,13 @@
 
 import Foundation
 
-class Scene {
-    
+class Scene: Equatable, Hashable {
+    static func == (lhs: Scene, rhs: Scene) -> Bool {
+        return lhs.unique_id == rhs.unique_id
+    }
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(self.unique_id)
+    }
     init(unique_id: Int, name: String, choice: Choice?) {
         self.unique_id = unique_id
         self.name = name

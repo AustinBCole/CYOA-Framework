@@ -26,12 +26,21 @@ class SceneController {
     
     private let choiceRequirementTuplesDictionary: [Int: (String, Int)] = [8: ("Guts", 10)]
     
-    private let adjacencyDictionary: Dictionary = [1: [2], 2: [3, 4, 5], 3: [], 4: [6, 7], 5: [8, 6, 7], 6: [9], 7: [], 8: [11, 12, 13], 9: [14, 15], 10: [], 11: [], 12: [], 13: [], 14: [], 15: []]
-    
     
     
     //MARK: Pubic Methods
-    public func createScenes() {
+    
+    //MARK: Internal Methods
+    
+    internal func getSceneArray() -> Array<Scene> {
+        createScenes()
+        return sceneArray
+    }
+    //MARK: Private Methods
+    private func getScene(tag: Int) -> Scene {
+        return sceneArray[tag - 1]
+    }
+    private func createScenes() {
         var count = 1
         for sceneFile in sceneFileArray {
             if sceneChoiceDictionary[count] != "" {
@@ -47,26 +56,6 @@ class SceneController {
                 sceneArray.append(scene)
             }
             count += 1
-        }
-    }
-    
-    //MARK: Internal Methods
-    
-    
-    //MARK: Private Methods
-    private func getScene(tag: Int) -> Scene {
-        return sceneArray[tag - 1]
-    }
-    private func getNextScenes(currentScene: Scene) {
-        var scenesArray: Array<Scene> = []
-        if adjacencyDictionary[currentScene.unique_id]?.count != 0 {
-            for uniqueID in adjacencyDictionary[currentScene.unique_id]! {
-                for scene in sceneArray {
-                    if uniqueID == scene.unique_id {
-                        scenesArray.append(scene)
-                    }
-                }
-            }
         }
     }
 }
