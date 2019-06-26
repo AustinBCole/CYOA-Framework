@@ -27,9 +27,14 @@ class SceneViewController: UIViewController {
     public func createScene(text: String, font: UIFont = UIFont(name: "Helvetica", size: 20)!) {
         let height = getHeightForLabel(text: text, font: font)
         createLabel(height: height, text: text, font: font)
+        getButtons()
     }
     
     //MARK: Private Methods
+    
+    private func getButtons() {
+        
+    }
     
     private func createLabel(height: CGFloat, text: String, font: UIFont) {
         let label = UILabel(frame: CGRect(x: 8, y: 8, width: view.frame.width - 16, height: height))
