@@ -11,7 +11,8 @@ import UIKit
 class SceneViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var storyTextLabel: UILabel!
-
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     @IBOutlet weak var choicesTableView: IntrinsicTableView!
     @IBOutlet weak var dynamicTVHeight: NSLayoutConstraint!
     override func viewDidLoad() {
@@ -31,7 +32,11 @@ class SceneViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLayoutSubviews()
         let height = min(self.view.bounds.size.height, choicesTableView.contentSize.height)
         dynamicTVHeight.constant = height
+        print(height)
+        print(choicesTableView.frame.height)
         self.storyTextLabel.sizeToFit()
+        scrollView.setContentOffset(CGPoint(x: 0, y: self.scrollView.contentOffset.y), animated: true)
+        self.scrollView.isDirectionalLockEnabled = true
         self.view.layoutIfNeeded()
     }
     
