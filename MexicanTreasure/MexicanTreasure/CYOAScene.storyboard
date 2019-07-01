@@ -57,7 +57,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="3Cr-ur-r57" firstAttribute="leading" secondItem="4jr-cO-4iD" secondAttribute="leading" id="ARG-zm-WPY"/>
-                                    <constraint firstAttribute="trailing" secondItem="3Cr-ur-r57" secondAttribute="trailing" id="fm3-Az-rwm"/>
+                                    <constraint firstItem="3Cr-ur-r57" firstAttribute="trailing" secondItem="4jr-cO-4iD" secondAttribute="trailing" id="fm3-Az-rwm"/>
                                     <constraint firstAttribute="bottom" secondItem="3Cr-ur-r57" secondAttribute="bottom" id="hwb-i0-qi7"/>
                                     <constraint firstItem="3Cr-ur-r57" firstAttribute="top" secondItem="eZn-S4-q7E" secondAttribute="bottom" constant="20" id="n3m-4T-Cl4"/>
                                 </constraints>
@@ -65,16 +65,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="4jr-cO-4iD" firstAttribute="leading" secondItem="KTb-uf-Zwb" secondAttribute="leading" constant="8" id="JNo-lb-Ja2"/>
-                            <constraint firstItem="KTb-uf-Zwb" firstAttribute="trailing" secondItem="4jr-cO-4iD" secondAttribute="trailing" constant="8" id="NUa-pA-7mn"/>
-                            <constraint firstItem="KTb-uf-Zwb" firstAttribute="bottom" secondItem="4jr-cO-4iD" secondAttribute="bottom" id="c1e-Zg-A5A"/>
-                            <constraint firstItem="4jr-cO-4iD" firstAttribute="top" secondItem="KTb-uf-Zwb" secondAttribute="top" constant="8" id="yQV-7p-2gK"/>
+                            <constraint firstItem="4jr-cO-4iD" firstAttribute="top" secondItem="KTb-uf-Zwb" secondAttribute="top" constant="8" id="7ow-w1-hh2"/>
+                            <constraint firstAttribute="trailing" secondItem="4jr-cO-4iD" secondAttribute="trailing" constant="8" id="OYm-0b-yzy"/>
+                            <constraint firstItem="4jr-cO-4iD" firstAttribute="bottom" secondItem="KTb-uf-Zwb" secondAttribute="bottom" constant="8" id="s4W-ps-gxR"/>
+                            <constraint firstItem="4jr-cO-4iD" firstAttribute="leading" secondItem="KTb-uf-Zwb" secondAttribute="leading" constant="8" id="znN-Yj-RdM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KTb-uf-Zwb"/>
                     </view>
                     <connections>
                         <outlet property="choicesTableView" destination="3Cr-ur-r57" id="n7n-UK-hEN"/>
                         <outlet property="dynamicTVHeight" destination="nuq-bi-C9o" id="he8-Dg-oJI"/>
+                        <outlet property="storyTextLabel" destination="eZn-S4-q7E" id="tv6-Ve-qHx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAZ-Wt-Rrc" userLabel="First Responder" sceneMemberID="firstResponder"/>
