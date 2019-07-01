@@ -18,17 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4jr-cO-4iD">
-                                <rect key="frame" x="8" y="52" width="398" height="102"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4jr-cO-4iD">
+                                <rect key="frame" x="8" y="52" width="398" height="818"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="751" text="Let's test to see if multiple lines are showing up in this label. Let's see if the container view will move." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZn-S4-q7E">
-                                        <rect key="frame" x="7.5" y="0.0" width="383.5" height="41"/>
+                                        <rect key="frame" x="7.5" y="0.0" width="383.5" height="678"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="120" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Cr-ur-r57">
-                                        <rect key="frame" x="0.0" y="61" width="398" height="41"/>
+                                        <rect key="frame" x="0.0" y="698" width="398" height="120"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="nuq-bi-C9o"/>
@@ -57,7 +57,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="3Cr-ur-r57" firstAttribute="leading" secondItem="4jr-cO-4iD" secondAttribute="leading" id="ARG-zm-WPY"/>
-                                    <constraint firstAttribute="trailing" secondItem="3Cr-ur-r57" secondAttribute="trailing" id="fm3-Az-rwm"/>
+                                    <constraint firstItem="3Cr-ur-r57" firstAttribute="trailing" secondItem="4jr-cO-4iD" secondAttribute="trailing" id="fm3-Az-rwm"/>
                                     <constraint firstAttribute="bottom" secondItem="3Cr-ur-r57" secondAttribute="bottom" id="hwb-i0-qi7"/>
                                     <constraint firstItem="3Cr-ur-r57" firstAttribute="top" secondItem="eZn-S4-q7E" secondAttribute="bottom" constant="20" id="n3m-4T-Cl4"/>
                                 </constraints>
@@ -65,16 +65,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="4jr-cO-4iD" firstAttribute="leading" secondItem="KTb-uf-Zwb" secondAttribute="leading" constant="8" id="JNo-lb-Ja2"/>
-                            <constraint firstItem="KTb-uf-Zwb" firstAttribute="trailing" secondItem="4jr-cO-4iD" secondAttribute="trailing" constant="8" id="NUa-pA-7mn"/>
-                            <constraint firstItem="KTb-uf-Zwb" firstAttribute="bottom" secondItem="4jr-cO-4iD" secondAttribute="bottom" id="c1e-Zg-A5A"/>
-                            <constraint firstItem="4jr-cO-4iD" firstAttribute="top" secondItem="KTb-uf-Zwb" secondAttribute="top" constant="8" id="yQV-7p-2gK"/>
+                            <constraint firstItem="4jr-cO-4iD" firstAttribute="top" secondItem="KTb-uf-Zwb" secondAttribute="top" constant="8" id="7ow-w1-hh2"/>
+                            <constraint firstAttribute="trailing" secondItem="4jr-cO-4iD" secondAttribute="trailing" constant="8" id="OYm-0b-yzy"/>
+                            <constraint firstItem="4jr-cO-4iD" firstAttribute="bottom" secondItem="KTb-uf-Zwb" secondAttribute="bottom" constant="8" id="s4W-ps-gxR"/>
+                            <constraint firstItem="4jr-cO-4iD" firstAttribute="leading" secondItem="KTb-uf-Zwb" secondAttribute="leading" constant="8" id="znN-Yj-RdM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KTb-uf-Zwb"/>
                     </view>
                     <connections>
                         <outlet property="choicesTableView" destination="3Cr-ur-r57" id="n7n-UK-hEN"/>
                         <outlet property="dynamicTVHeight" destination="nuq-bi-C9o" id="he8-Dg-oJI"/>
+                        <outlet property="storyTextLabel" destination="eZn-S4-q7E" id="tv6-Ve-qHx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAZ-Wt-Rrc" userLabel="First Responder" sceneMemberID="firstResponder"/>

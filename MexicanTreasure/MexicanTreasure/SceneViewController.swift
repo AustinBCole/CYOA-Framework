@@ -10,18 +10,19 @@ import UIKit
 
 class SceneViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var storyTextLabel: UILabel!
     @IBOutlet weak var choicesTableView: UITableView!
     @IBOutlet weak var dynamicTVHeight: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         choicesTableView.delegate = self
         choicesTableView.dataSource = self
+        storyTextLabel.translatesAutoresizingMaskIntoConstraints = true
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        choicesTableView.reloadData()
     }
     
     
@@ -29,6 +30,7 @@ class SceneViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLayoutSubviews()
         let height = min(self.view.bounds.size.height, choicesTableView.contentSize.height)
         dynamicTVHeight.constant = height
+        self.storyTextLabel.sizeToFit()
         self.view.layoutIfNeeded()
     }
     
