@@ -8,28 +8,62 @@
 
 import UIKit
 
-class SceneViewController: UIViewController {
+class SceneViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet private weak var buttonsView: UIView!
+    @IBOutlet weak var choicesTableView: UITableView!
+    @IBOutlet weak var dynamicTVHeight: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
-        createButton()
+        choicesTableView.delegate = self
+        choicesTableView.dataSource = self
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        choicesTableView.reloadData()
+    }
+    
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        let height = min(self.view.bounds.size.height, choicesTableView.contentSize.height)
+        dynamicTVHeight.constant = height
+        self.view.layoutIfNeeded()
     }
     
     //MARK: Public Variables
     
     
     //MARK: Private Variables
+
+    //MARK: Tableview Delegate and Data Source Methods
     
-    private func createButton() {
-        let button = UIButton(frame: CGRect(x: 8, y: 8, width: buttonsView.frame.width - 16, height: 50))
-        button.setTitle("This is a test to see if a really long title will wrap or soemthing, I don't know", for: .normal)
-        button.titleLabel?.lineBreakMode = .byWordWrapping
-        button.backgroundColor = .black
-        buttonsView.addSubview(button)
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = choicesTableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        cell.imageView?.image = UIImage(named: "n01")
+        cell.textLabel?.text = "This is a test choice. Let's see if it word wraps appropriately."
+        cell.textLabel?.lineBreakMode = .byWordWrapping
+        cell.textLabel?.numberOfLines = 0
+        
+        return cell
+    }
+    
+    private func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
 
 
     /*
