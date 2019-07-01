@@ -18,7 +18,7 @@ class Graph {
     
     private let adjacencyDictionary: Dictionary = [1: [2], 2: [3, 4, 5], 3: [], 4: [6, 7], 5: [8, 6, 7], 6: [9], 7: [], 8: [11, 12, 13], 9: [14, 15], 10: [], 11: [], 12: [], 13: [], 14: [], 15: []]
     
-    internal func createGraph() {
+    internal func createStoryGraph() {
         
         // Get the array of scenes in reversed order
         let sceneArray = SceneController.shared.getSceneArray()
@@ -36,7 +36,6 @@ class Graph {
         }
     }
     private func addSceneVertex(vertex: Scene) {
-        
         self.sceneVertices[vertex] = []
     }
     private func addEdge(vertex: Scene, edgeVertex: Scene) {

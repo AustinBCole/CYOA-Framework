@@ -33,6 +33,7 @@
 		A2B8771422C2DDA2008FDBB3 /* 8flee.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2B8770522C2DDA2008FDBB3 /* 8flee.txt */; };
 		A2B8771722C2EB8B008FDBB3 /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B8771522C2EB8B008FDBB3 /* SceneViewController.swift */; };
 		A2B8771B22C41CD2008FDBB3 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B8771A22C41CD2008FDBB3 /* Graph.swift */; };
+		A2B8771D22C428CE008FDBB3 /* CYOAScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B8771C22C428CE008FDBB3 /* CYOAScene.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		A2B8770522C2DDA2008FDBB3 /* 8flee.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 8flee.txt; sourceTree = "<group>"; };
 		A2B8771522C2EB8B008FDBB3 /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewController.swift; sourceTree = "<group>"; };
 		A2B8771A22C41CD2008FDBB3 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		A2B8771C22C428CE008FDBB3 /* CYOAScene.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CYOAScene.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				A2B876F322C28109008FDBB3 /* Item.swift */,
 				A2B876F122C28020008FDBB3 /* Choice.swift */,
 				A2B8771522C2EB8B008FDBB3 /* SceneViewController.swift */,
+				A2B8771C22C428CE008FDBB3 /* CYOAScene.storyboard */,
 				A2B876E022C1812B008FDBB3 /* Assets.xcassets */,
 				A2B876E222C1812B008FDBB3 /* LaunchScreen.storyboard */,
 				A2B876E522C1812B008FDBB3 /* Info.plist */,
@@ -202,6 +205,7 @@
 				A2B8770D22C2DDA2008FDBB3 /* 11robber_scout.txt in Resources */,
 				A2B8771022C2DDA2008FDBB3 /* 6friend.txt in Resources */,
 				A2B8771122C2DDA2008FDBB3 /* 14friend_together.txt in Resources */,
+				A2B8771D22C428CE008FDBB3 /* CYOAScene.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,56 +8,61 @@
 
 import UIKit
 
-class SceneViewController: UIViewController {
+class SceneViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var choicesTableView: UITableView!
+    @IBOutlet weak var dynamicTVHeight: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        choicesTableView.delegate = self
+        choicesTableView.dataSource = self
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        choicesTableView.reloadData()
+    }
+    
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        let height = min(self.view.bounds.size.height, choicesTableView.contentSize.height)
+        dynamicTVHeight.constant = height
+        self.view.layoutIfNeeded()
     }
     
     //MARK: Public Variables
     
     
     //MARK: Private Variables
+
+    //MARK: Tableview Delegate and Data Source Methods
     
-    
-    //MARK: Public Methods
-    
-    public func createScene(text: String, font: UIFont = UIFont(name: "Helvetica", size: 20)!) {
-        let height = getHeightForLabel(text: text, font: font)
-        createLabel(height: height, text: text, font: font)
-        getButtons()
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
-    //MARK: Private Methods
-    
-    private func getButtons() {
-        
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
     }
     
-    private func createLabel(height: CGFloat, text: String, font: UIFont) {
-        let label = UILabel(frame: CGRect(x: 8, y: 8, width: view.frame.width - 16, height: height))
-        label.numberOfLines = 0
-        label.lineBreakMode = NSLineBreakMode.byWordWrapping
-        label.font = font
-        label.text = text
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = choicesTableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         
-        label.sizeToFit()
+        cell.imageView?.image = UIImage(named: "n01")
+        cell.textLabel?.text = "This is a test choice. Let's see if it word wraps appropriately."
+        cell.textLabel?.lineBreakMode = .byWordWrapping
+        cell.textLabel?.numberOfLines = 0
         
-        view.addSubview(label)
+        return cell
     }
     
-    private func getHeightForLabel(text: String, font: UIFont) -> CGFloat {
-        let label = UILabel(frame: CGRect(x: 8, y: 8, width: view.frame.width - 16, height: CGFloat.greatestFiniteMagnitude))
-        label.numberOfLines = 0
-        label.lineBreakMode = NSLineBreakMode.byWordWrapping
-        label.font = font
-        label.text = text
-        
-        label.sizeToFit()
-        
-        return label.frame.height
+    private func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
 
 
