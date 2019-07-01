@@ -63,6 +63,8 @@ class SceneViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.textLabel?.lineBreakMode = .byWordWrapping
         cell.textLabel?.numberOfLines = 0
         
+        cell.selectionStyle = .none
+        
         return cell
     }
     
