@@ -31,7 +31,6 @@ class SceneViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let height = min(self.view.bounds.size.height, choicesTableView.contentSize.height)
         dynamicTVHeight.constant = height
         self.storyTextLabel.sizeToFit()
-        print(storyTextLabel.frame.height)
         self.view.layoutIfNeeded()
     }
     
