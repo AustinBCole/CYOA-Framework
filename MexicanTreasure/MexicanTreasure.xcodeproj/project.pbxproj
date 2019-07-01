@@ -34,6 +34,7 @@
 		A2B8771722C2EB8B008FDBB3 /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B8771522C2EB8B008FDBB3 /* SceneViewController.swift */; };
 		A2B8771B22C41CD2008FDBB3 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B8771A22C41CD2008FDBB3 /* Graph.swift */; };
 		A2B8771D22C428CE008FDBB3 /* CYOAScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B8771C22C428CE008FDBB3 /* CYOAScene.storyboard */; };
+		A2FADB3522CA8AA00087365D /* IntrinsicTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FADB3422CA8AA00087365D /* IntrinsicTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		A2B8771522C2EB8B008FDBB3 /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewController.swift; sourceTree = "<group>"; };
 		A2B8771A22C41CD2008FDBB3 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		A2B8771C22C428CE008FDBB3 /* CYOAScene.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CYOAScene.storyboard; sourceTree = "<group>"; };
+		A2FADB3422CA8AA00087365D /* IntrinsicTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrinsicTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				A2B876F122C28020008FDBB3 /* Choice.swift */,
 				A2B8771522C2EB8B008FDBB3 /* SceneViewController.swift */,
 				A2B8771C22C428CE008FDBB3 /* CYOAScene.storyboard */,
+				A2FADB3422CA8AA00087365D /* IntrinsicTableView.swift */,
 				A2B876E022C1812B008FDBB3 /* Assets.xcassets */,
 				A2B876E222C1812B008FDBB3 /* LaunchScreen.storyboard */,
 				A2B876E522C1812B008FDBB3 /* Info.plist */,
@@ -221,6 +224,7 @@
 				A2B876F622C28197008FDBB3 /* Stat.swift in Sources */,
 				A2B876DA22C18129008FDBB3 /* AppDelegate.swift in Sources */,
 				A2B876EE22C183A8008FDBB3 /* SceneController.swift in Sources */,
+				A2FADB3522CA8AA00087365D /* IntrinsicTableView.swift in Sources */,
 				A2B876F422C28109008FDBB3 /* Item.swift in Sources */,
 				A2B8771B22C41CD2008FDBB3 /* Graph.swift in Sources */,
 				A2B876F022C28015008FDBB3 /* Character.swift in Sources */,

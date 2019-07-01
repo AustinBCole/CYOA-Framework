@@ -11,7 +11,8 @@ import UIKit
 class SceneViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var storyTextLabel: UILabel!
-    @IBOutlet weak var choicesTableView: UITableView!
+
+    @IBOutlet weak var choicesTableView: IntrinsicTableView!
     @IBOutlet weak var dynamicTVHeight: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()

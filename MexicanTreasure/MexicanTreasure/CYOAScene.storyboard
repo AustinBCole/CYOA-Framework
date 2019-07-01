@@ -18,16 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EtD-tQ-RE3">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </scrollView>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4jr-cO-4iD">
                                 <rect key="frame" x="8" y="52" width="398" height="818"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="751" text="Let's test to see if multiple lines are showing up in this label. Let's see if the container view will move." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZn-S4-q7E">
-                                        <rect key="frame" x="7.5" y="0.0" width="383.5" height="678"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="751" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZn-S4-q7E">
+                                        <rect key="frame" x="0.5" y="0.0" width="397.5" height="678"/>
+                                        <string key="text">Let's test to see if multiple lines are showing up in this label. Let's see if the table view will move. Okay let's add another line just to test and be sure that it is still working.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="120" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Cr-ur-r57">
+                                    <tableView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="120" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Cr-ur-r57" customClass="IntrinsicTableView" customModule="MexicanTreasure" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="698" width="398" height="120"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -38,11 +42,11 @@
                                                 <rect key="frame" x="0.0" y="28" width="398" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="v7S-wy-sjX" id="IQj-kD-Qsm">
-                                                    <rect key="frame" x="0.0" y="0.0" width="398" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="398" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d1a-Yo-Dm3">
-                                                            <rect key="frame" x="20" y="0.0" width="358" height="43.5"/>
+                                                            <rect key="frame" x="20" y="0.0" width="358" height="44"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -65,15 +69,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="EtD-tQ-RE3" firstAttribute="leading" secondItem="KTb-uf-Zwb" secondAttribute="leading" id="7O1-ja-NaR"/>
                             <constraint firstItem="4jr-cO-4iD" firstAttribute="top" secondItem="KTb-uf-Zwb" secondAttribute="top" constant="8" id="7ow-w1-hh2"/>
                             <constraint firstAttribute="trailing" secondItem="4jr-cO-4iD" secondAttribute="trailing" constant="8" id="OYm-0b-yzy"/>
+                            <constraint firstItem="KTb-uf-Zwb" firstAttribute="bottom" secondItem="EtD-tQ-RE3" secondAttribute="bottom" id="Q0Z-V1-sQA"/>
+                            <constraint firstItem="EtD-tQ-RE3" firstAttribute="top" secondItem="KTb-uf-Zwb" secondAttribute="top" id="kyu-RD-y6u"/>
                             <constraint firstItem="4jr-cO-4iD" firstAttribute="bottom" secondItem="KTb-uf-Zwb" secondAttribute="bottom" constant="8" id="s4W-ps-gxR"/>
+                            <constraint firstItem="KTb-uf-Zwb" firstAttribute="trailing" secondItem="EtD-tQ-RE3" secondAttribute="trailing" id="y8Y-UD-4JC"/>
                             <constraint firstItem="4jr-cO-4iD" firstAttribute="leading" secondItem="KTb-uf-Zwb" secondAttribute="leading" constant="8" id="znN-Yj-RdM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KTb-uf-Zwb"/>
                     </view>
                     <connections>
-                        <outlet property="choicesTableView" destination="3Cr-ur-r57" id="n7n-UK-hEN"/>
+                        <outlet property="choicesTableView" destination="3Cr-ur-r57" id="2AP-9w-o3y"/>
                         <outlet property="dynamicTVHeight" destination="nuq-bi-C9o" id="he8-Dg-oJI"/>
                         <outlet property="storyTextLabel" destination="eZn-S4-q7E" id="tv6-Ve-qHx"/>
                     </connections>
