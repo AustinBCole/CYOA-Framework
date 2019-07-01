@@ -11,7 +11,9 @@ import UIKit
 class SceneViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var storyTextLabel: UILabel!
-    @IBOutlet weak var choicesTableView: UITableView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    @IBOutlet weak var choicesTableView: IntrinsicTableView!
     @IBOutlet weak var dynamicTVHeight: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +32,11 @@ class SceneViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLayoutSubviews()
         let height = min(self.view.bounds.size.height, choicesTableView.contentSize.height)
         dynamicTVHeight.constant = height
+        print(height)
+        print(choicesTableView.frame.height)
         self.storyTextLabel.sizeToFit()
+        scrollView.setContentOffset(CGPoint(x: 0, y: self.scrollView.contentOffset.y), animated: true)
+        self.scrollView.isDirectionalLockEnabled = true
         self.view.layoutIfNeeded()
     }
     
@@ -52,10 +58,12 @@ class SceneViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = choicesTableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         
-        cell.imageView?.image = UIImage(named: "n01")
+        cell.imageView?.image = UIImage(named: "radioNotToggled")
         cell.textLabel?.text = "This is a test choice. Let's see if it word wraps appropriately."
         cell.textLabel?.lineBreakMode = .byWordWrapping
         cell.textLabel?.numberOfLines = 0
+        
+        cell.selectionStyle = .none
         
         return cell
     }
@@ -66,7 +74,16 @@ class SceneViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.imageView?.image = UIImage(named: "radioToggled")
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.imageView?.image = UIImage(named: "radioNotToggled")
+    }
 
     /*
     // MARK: - Navigation
