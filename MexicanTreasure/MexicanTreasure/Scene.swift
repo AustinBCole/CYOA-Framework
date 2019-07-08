@@ -38,4 +38,10 @@ class Scene: Equatable, Hashable {
         }
         return text
     }
+    internal func getChoice() -> String {
+        if choice?.name == "" || choice?.name == nil{
+            return "Continue"
+        }
+        return choice!.name
+    }
 }

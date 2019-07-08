@@ -21,6 +21,7 @@ class SceneViewController: UIViewController, UITableViewDelegate, UITableViewDat
         choicesTableView.dataSource = self
         storyTextLabel.translatesAutoresizingMaskIntoConstraints = true
         // Do any additional setup after loading the view.
+        Graph.shared.createStoryGraph()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -44,6 +45,8 @@ class SceneViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     
     //MARK: Private Variables
+    
+    private var visited:[Int: Bool] = [:]
 
     //MARK: Tableview Delegate and Data Source Methods
     
@@ -52,14 +55,17 @@ class SceneViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return Graph.shared.getChoices()?.count ?? 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = choicesTableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         
         cell.imageView?.image = UIImage(named: "radioNotToggled")
-        cell.textLabel?.text = "This is a test choice. Let's see if it word wraps appropriately."
+        
+        var choiceArray = Graph.shared.getChoices()
+        
+        cell.textLabel?.text = choiceArray?[indexPath.row].getChoice()
         cell.textLabel?.lineBreakMode = .byWordWrapping
         cell.textLabel?.numberOfLines = 0
         

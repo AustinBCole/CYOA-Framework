@@ -30,7 +30,9 @@ class SceneController {
     ///This dictionary contains stat requirements for the player. The key is the scene number, the value is the stat followed by the requirement.
     private let choiceRequirementTuplesDictionary: [Int: (String, Int)] = [8: ("Guts", 10)]
     
+    //MARK: Internal Properties
     
+    internal var currentScene = 1
     
     //MARK: Pubic Methods
     

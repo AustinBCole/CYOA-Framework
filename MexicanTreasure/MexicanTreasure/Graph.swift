@@ -26,7 +26,6 @@ class Graph {
         // Iterate over scenes
         for scene in sceneArray {
         // Add each scene as a vertex
-            print(scene.name)
             addSceneVertex(vertex: scene)
         // Get connected vertices, which will be ints
         // Add edges be vertex by getting the using vertex - 1 of the sceneArray
@@ -36,6 +35,18 @@ class Graph {
                 }
             }
         }
+    }
+    internal func getChoices() -> [Scene]? {
+        // Iterate over scene keys in sceneVertices
+        for scene in sceneVertices {
+            // Find the scene whose ID matches the current_scene number
+            if scene.key.unique_id == SceneController.shared.currentScene {
+            // Return that scene's choices
+                return scene.value
+            }
+        }
+        // I'm not sure why it would ever return nil. If it does then we have a problem.
+        return nil
     }
     private func addSceneVertex(vertex: Scene) {
         self.sceneVertices[vertex] = []
