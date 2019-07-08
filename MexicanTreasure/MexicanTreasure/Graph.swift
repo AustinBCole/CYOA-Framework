@@ -14,6 +14,7 @@ class Graph {
     static let shared = Graph()
     private init(){}
     
+    ///This dictionary is the graph of scenes. Each scene is a vertex with associated edges.
     private var sceneVertices: [Scene: [Scene]] = [:]
     
     private let adjacencyDictionary: Dictionary = [1: [2], 2: [3, 4, 5], 3: [], 4: [6, 7], 5: [8, 6, 7], 6: [9], 7: [], 8: [11, 12, 13], 9: [14, 15], 10: [], 11: [], 12: [], 13: [], 14: [], 15: []]
