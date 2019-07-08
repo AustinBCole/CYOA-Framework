@@ -43,20 +43,22 @@ class SceneController {
     internal func createScenes() {
         var count = 1
         for sceneFile in sceneFileArray {
-            print(count)
             if sceneChoiceDictionary[count] != "" {
                 if (choiceRequirementTuplesDictionary[count] != nil) {
                     let scene = Scene(unique_id: count, name: sceneFile, choice: Choice(requirement: Stat(withTuple: choiceRequirementTuplesDictionary[count]!), name: sceneChoiceDictionary[count]!))
                     sceneArray.append(scene)
                 }
-                let scene = Scene(unique_id: count, name: sceneFile, choice: Choice(requirement: nil, name: sceneChoiceDictionary[count]!))
-                sceneArray.append(scene)
+                else {
+                    let scene = Scene(unique_id: count, name: sceneFile, choice: Choice(requirement: nil, name: sceneChoiceDictionary[count]!))
+                    sceneArray.append(scene)
+            }
             }
             else {
                 let scene = Scene(unique_id: count, name: sceneFile, choice: nil)
                 sceneArray.append(scene)
             }
             count += 1
+            print(count)
         }
         for scene in sceneArray {
             print(scene.unique_id)
