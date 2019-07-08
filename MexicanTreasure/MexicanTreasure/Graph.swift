@@ -25,6 +25,7 @@ class Graph {
         // Iterate over scenes
         for scene in sceneArray {
         // Add each scene as a vertex
+            print(scene.name)
             addSceneVertex(vertex: scene)
         // Get connected vertices, which will be ints
         // Add edges be vertex by getting the using vertex - 1 of the sceneArray
