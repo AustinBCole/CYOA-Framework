@@ -25,14 +25,14 @@
                                         <rect key="frame" x="8" y="8" width="414" height="818"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="751" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZn-S4-q7E">
-                                                <rect key="frame" x="8" y="0.0" width="398" height="601.5"/>
+                                                <rect key="frame" x="8" y="0.0" width="398" height="628"/>
                                                 <string key="text">Let's test to see if multiple lines are showing up in this label. Let's see if the table view will move. Okay let's add another line just to test and be sure that it is still working. Let's test to see if multiple lines are showing up in this label. Let's see if the table view will move. Okay let's add another line just to test and be sure that it is still working. Let's test to see if multiple lines are showing up in this label. Let's see if the table view will move. Okay let's add another line just to test and be sure that it is still working. Let's test to see if multiple lines are showing up in this label. Let's see if the table view will move. Okay let's add another line just to test and be sure that it is still working. Let's test to see if multiple lines are showing up in this label. Let's see if the table view will move. Okay let's add another line just to test and be sure that it is still working. Let's test to see if multiple lines are showing up in this label. Let's see if the table view will move. Okay let's add another line just to test and be sure that it is still working. Let's test to see if multiple lines are showing up in this label. Let's see if the table view will move. Okay let's add another line just to test and be sure that it is still working. Let's test to see if multiple lines are showing up in this label. Let's see if the table view will move. Okay let's add another line just to test and be sure that it is still working.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="120" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Cr-ur-r57" customClass="IntrinsicTableView" customModule="MexicanTreasure" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="621.5" width="414" height="120"/>
+                                                <rect key="frame" x="0.0" y="648" width="414" height="120"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="120" id="nuq-bi-C9o"/>
@@ -58,8 +58,11 @@
                                                 </prototypes>
                                                 <sections/>
                                             </tableView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8u-De-UuY">
-                                                <rect key="frame" x="191" y="761.5" width="32" height="56.5"/>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="999" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8u-De-UuY">
+                                                <rect key="frame" x="191" y="788" width="32" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="XOA-rT-TtS"/>
+                                                </constraints>
                                                 <state key="normal" title="Next"/>
                                                 <connections>
                                                     <action selector="nextButtonTapped:" destination="PVI-9e-5Nu" eventType="touchUpInside" id="ydK-mc-2cE"/>
@@ -68,9 +71,12 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="3Cr-ur-r57" firstAttribute="leading" secondItem="4jr-cO-4iD" secondAttribute="leading" id="ARG-zm-WPY"/>
+                                            <constraint firstItem="h8u-De-UuY" firstAttribute="centerX" secondItem="4jr-cO-4iD" secondAttribute="centerX" id="IGg-1T-aLu"/>
+                                            <constraint firstItem="eZn-S4-q7E" firstAttribute="centerX" secondItem="4jr-cO-4iD" secondAttribute="centerX" id="Syw-fO-uQc"/>
                                             <constraint firstItem="3Cr-ur-r57" firstAttribute="trailing" secondItem="4jr-cO-4iD" secondAttribute="trailing" id="fm3-Az-rwm"/>
                                             <constraint firstItem="3Cr-ur-r57" firstAttribute="top" secondItem="eZn-S4-q7E" secondAttribute="bottom" constant="20" id="n3m-4T-Cl4"/>
                                             <constraint firstAttribute="trailing" secondItem="eZn-S4-q7E" secondAttribute="trailing" constant="8" id="neA-I1-127"/>
+                                            <constraint firstItem="3Cr-ur-r57" firstAttribute="centerX" secondItem="4jr-cO-4iD" secondAttribute="centerX" id="qYb-iP-aZa"/>
                                             <constraint firstItem="eZn-S4-q7E" firstAttribute="leading" secondItem="4jr-cO-4iD" secondAttribute="leading" constant="8" id="tOH-z7-lWQ"/>
                                         </constraints>
                                     </stackView>
