@@ -16,24 +16,24 @@
 		A2B876F222C28020008FDBB3 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B876F122C28020008FDBB3 /* Choice.swift */; };
 		A2B876F422C28109008FDBB3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B876F322C28109008FDBB3 /* Item.swift */; };
 		A2B876F622C28197008FDBB3 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B876F522C28197008FDBB3 /* Stat.swift */; };
-		A2B8770622C2DDA2008FDBB3 /* 15friend_scout.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2B876F722C2DDA1008FDBB3 /* 15friend_scout.txt */; };
-		A2B8770722C2DDA2008FDBB3 /* 4defend.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2B876F822C2DDA1008FDBB3 /* 4defend.txt */; };
-		A2B8770822C2DDA2008FDBB3 /* 7mexico.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2B876F922C2DDA1008FDBB3 /* 7mexico.txt */; };
-		A2B8770922C2DDA2008FDBB3 /* 12robber_alone.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2B876FA22C2DDA1008FDBB3 /* 12robber_alone.txt */; };
-		A2B8770A22C2DDA2008FDBB3 /* 3pizza.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2B876FB22C2DDA1008FDBB3 /* 3pizza.txt */; };
-		A2B8770B22C2DDA2008FDBB3 /* 10robber_together_get_it.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2B876FC22C2DDA1008FDBB3 /* 10robber_together_get_it.txt */; };
-		A2B8770C22C2DDA2008FDBB3 /* 1opening.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2B876FD22C2DDA1008FDBB3 /* 1opening.txt */; };
-		A2B8770D22C2DDA2008FDBB3 /* 11robber_scout.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2B876FE22C2DDA1008FDBB3 /* 11robber_scout.txt */; };
-		A2B8770E22C2DDA2008FDBB3 /* 9fly.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2B876FF22C2DDA1008FDBB3 /* 9fly.txt */; };
-		A2B8770F22C2DDA2008FDBB3 /* 13alone_without_robber.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2B8770022C2DDA1008FDBB3 /* 13alone_without_robber.txt */; };
-		A2B8771022C2DDA2008FDBB3 /* 6friend.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2B8770122C2DDA1008FDBB3 /* 6friend.txt */; };
-		A2B8771122C2DDA2008FDBB3 /* 14friend_together.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2B8770222C2DDA2008FDBB3 /* 14friend_together.txt */; };
-		A2B8771222C2DDA2008FDBB3 /* 2robber.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2B8770322C2DDA2008FDBB3 /* 2robber.txt */; };
-		A2B8771322C2DDA2008FDBB3 /* 5theft.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2B8770422C2DDA2008FDBB3 /* 5theft.txt */; };
-		A2B8771422C2DDA2008FDBB3 /* 8flee.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2B8770522C2DDA2008FDBB3 /* 8flee.txt */; };
 		A2B8771722C2EB8B008FDBB3 /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B8771522C2EB8B008FDBB3 /* SceneViewController.swift */; };
 		A2B8771B22C41CD2008FDBB3 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B8771A22C41CD2008FDBB3 /* Graph.swift */; };
 		A2B8771D22C428CE008FDBB3 /* CYOAScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B8771C22C428CE008FDBB3 /* CYOAScene.storyboard */; };
+		A2E9654E22D4EEB70016FDC2 /* 15friend_scout.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2E9653F22D4EEB60016FDC2 /* 15friend_scout.txt */; };
+		A2E9654F22D4EEB70016FDC2 /* 9fly.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2E9654022D4EEB60016FDC2 /* 9fly.txt */; };
+		A2E9655022D4EEB70016FDC2 /* 10robber_together_get_it.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2E9654122D4EEB60016FDC2 /* 10robber_together_get_it.txt */; };
+		A2E9655122D4EEB70016FDC2 /* 7mexico.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2E9654222D4EEB70016FDC2 /* 7mexico.txt */; };
+		A2E9655222D4EEB70016FDC2 /* 2robber.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2E9654322D4EEB70016FDC2 /* 2robber.txt */; };
+		A2E9655322D4EEB70016FDC2 /* 3pizza.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2E9654422D4EEB70016FDC2 /* 3pizza.txt */; };
+		A2E9655422D4EEB70016FDC2 /* 8flee.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2E9654522D4EEB70016FDC2 /* 8flee.txt */; };
+		A2E9655522D4EEB70016FDC2 /* 5theft.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2E9654622D4EEB70016FDC2 /* 5theft.txt */; };
+		A2E9655622D4EEB70016FDC2 /* 1opening.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2E9654722D4EEB70016FDC2 /* 1opening.txt */; };
+		A2E9655722D4EEB70016FDC2 /* 12robber_alone.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2E9654822D4EEB70016FDC2 /* 12robber_alone.txt */; };
+		A2E9655822D4EEB70016FDC2 /* 13alone_without_robber.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2E9654922D4EEB70016FDC2 /* 13alone_without_robber.txt */; };
+		A2E9655922D4EEB70016FDC2 /* 14friend_together.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2E9654A22D4EEB70016FDC2 /* 14friend_together.txt */; };
+		A2E9655A22D4EEB70016FDC2 /* 11robber_scout.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2E9654B22D4EEB70016FDC2 /* 11robber_scout.txt */; };
+		A2E9655B22D4EEB70016FDC2 /* 6friend.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2E9654C22D4EEB70016FDC2 /* 6friend.txt */; };
+		A2E9655C22D4EEB70016FDC2 /* 4defend.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2E9654D22D4EEB70016FDC2 /* 4defend.txt */; };
 		A2FADB3522CA8AA00087365D /* IntrinsicTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FADB3422CA8AA00087365D /* IntrinsicTableView.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,24 +49,24 @@
 		A2B876F122C28020008FDBB3 /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
 		A2B876F322C28109008FDBB3 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A2B876F522C28197008FDBB3 /* Stat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stat.swift; sourceTree = "<group>"; };
-		A2B876F722C2DDA1008FDBB3 /* 15friend_scout.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 15friend_scout.txt; sourceTree = "<group>"; };
-		A2B876F822C2DDA1008FDBB3 /* 4defend.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 4defend.txt; sourceTree = "<group>"; };
-		A2B876F922C2DDA1008FDBB3 /* 7mexico.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 7mexico.txt; sourceTree = "<group>"; };
-		A2B876FA22C2DDA1008FDBB3 /* 12robber_alone.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 12robber_alone.txt; sourceTree = "<group>"; };
-		A2B876FB22C2DDA1008FDBB3 /* 3pizza.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3pizza.txt; sourceTree = "<group>"; };
-		A2B876FC22C2DDA1008FDBB3 /* 10robber_together_get_it.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 10robber_together_get_it.txt; sourceTree = "<group>"; };
-		A2B876FD22C2DDA1008FDBB3 /* 1opening.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1opening.txt; sourceTree = "<group>"; };
-		A2B876FE22C2DDA1008FDBB3 /* 11robber_scout.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 11robber_scout.txt; sourceTree = "<group>"; };
-		A2B876FF22C2DDA1008FDBB3 /* 9fly.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 9fly.txt; sourceTree = "<group>"; };
-		A2B8770022C2DDA1008FDBB3 /* 13alone_without_robber.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 13alone_without_robber.txt; sourceTree = "<group>"; };
-		A2B8770122C2DDA1008FDBB3 /* 6friend.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 6friend.txt; sourceTree = "<group>"; };
-		A2B8770222C2DDA2008FDBB3 /* 14friend_together.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 14friend_together.txt; sourceTree = "<group>"; };
-		A2B8770322C2DDA2008FDBB3 /* 2robber.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2robber.txt; sourceTree = "<group>"; };
-		A2B8770422C2DDA2008FDBB3 /* 5theft.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 5theft.txt; sourceTree = "<group>"; };
-		A2B8770522C2DDA2008FDBB3 /* 8flee.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 8flee.txt; sourceTree = "<group>"; };
 		A2B8771522C2EB8B008FDBB3 /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewController.swift; sourceTree = "<group>"; };
 		A2B8771A22C41CD2008FDBB3 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		A2B8771C22C428CE008FDBB3 /* CYOAScene.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CYOAScene.storyboard; sourceTree = "<group>"; };
+		A2E9653F22D4EEB60016FDC2 /* 15friend_scout.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 15friend_scout.txt; sourceTree = SOURCE_ROOT; };
+		A2E9654022D4EEB60016FDC2 /* 9fly.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 9fly.txt; sourceTree = SOURCE_ROOT; };
+		A2E9654122D4EEB60016FDC2 /* 10robber_together_get_it.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 10robber_together_get_it.txt; sourceTree = SOURCE_ROOT; };
+		A2E9654222D4EEB70016FDC2 /* 7mexico.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 7mexico.txt; sourceTree = SOURCE_ROOT; };
+		A2E9654322D4EEB70016FDC2 /* 2robber.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2robber.txt; sourceTree = SOURCE_ROOT; };
+		A2E9654422D4EEB70016FDC2 /* 3pizza.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3pizza.txt; sourceTree = SOURCE_ROOT; };
+		A2E9654522D4EEB70016FDC2 /* 8flee.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 8flee.txt; sourceTree = SOURCE_ROOT; };
+		A2E9654622D4EEB70016FDC2 /* 5theft.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 5theft.txt; sourceTree = SOURCE_ROOT; };
+		A2E9654722D4EEB70016FDC2 /* 1opening.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1opening.txt; sourceTree = SOURCE_ROOT; };
+		A2E9654822D4EEB70016FDC2 /* 12robber_alone.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 12robber_alone.txt; sourceTree = SOURCE_ROOT; };
+		A2E9654922D4EEB70016FDC2 /* 13alone_without_robber.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 13alone_without_robber.txt; sourceTree = SOURCE_ROOT; };
+		A2E9654A22D4EEB70016FDC2 /* 14friend_together.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 14friend_together.txt; sourceTree = SOURCE_ROOT; };
+		A2E9654B22D4EEB70016FDC2 /* 11robber_scout.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 11robber_scout.txt; sourceTree = SOURCE_ROOT; };
+		A2E9654C22D4EEB70016FDC2 /* 6friend.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 6friend.txt; sourceTree = SOURCE_ROOT; };
+		A2E9654D22D4EEB70016FDC2 /* 4defend.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 4defend.txt; sourceTree = SOURCE_ROOT; };
 		A2FADB3422CA8AA00087365D /* IntrinsicTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrinsicTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,21 +86,6 @@
 			children = (
 				A2B876D822C18129008FDBB3 /* MexicanTreasure */,
 				A2B876D722C18129008FDBB3 /* Products */,
-				A2B876FD22C2DDA1008FDBB3 /* 1opening.txt */,
-				A2B8770322C2DDA2008FDBB3 /* 2robber.txt */,
-				A2B876FB22C2DDA1008FDBB3 /* 3pizza.txt */,
-				A2B876F822C2DDA1008FDBB3 /* 4defend.txt */,
-				A2B8770422C2DDA2008FDBB3 /* 5theft.txt */,
-				A2B8770122C2DDA1008FDBB3 /* 6friend.txt */,
-				A2B876F922C2DDA1008FDBB3 /* 7mexico.txt */,
-				A2B8770522C2DDA2008FDBB3 /* 8flee.txt */,
-				A2B876FF22C2DDA1008FDBB3 /* 9fly.txt */,
-				A2B876FC22C2DDA1008FDBB3 /* 10robber_together_get_it.txt */,
-				A2B876FE22C2DDA1008FDBB3 /* 11robber_scout.txt */,
-				A2B876FA22C2DDA1008FDBB3 /* 12robber_alone.txt */,
-				A2B8770022C2DDA1008FDBB3 /* 13alone_without_robber.txt */,
-				A2B8770222C2DDA2008FDBB3 /* 14friend_together.txt */,
-				A2B876F722C2DDA1008FDBB3 /* 15friend_scout.txt */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +100,7 @@
 		A2B876D822C18129008FDBB3 /* MexicanTreasure */ = {
 			isa = PBXGroup;
 			children = (
+				A2E9651E22D4EE170016FDC2 /* Resources */,
 				A2B876D922C18129008FDBB3 /* AppDelegate.swift */,
 				A2B876EB22C183A2008FDBB3 /* Scene.swift */,
 				A2B876ED22C183A8008FDBB3 /* SceneController.swift */,
@@ -131,6 +117,29 @@
 				A2B876E522C1812B008FDBB3 /* Info.plist */,
 			);
 			path = MexicanTreasure;
+			sourceTree = "<group>";
+		};
+		A2E9651E22D4EE170016FDC2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A2E9654722D4EEB70016FDC2 /* 1opening.txt */,
+				A2E9654322D4EEB70016FDC2 /* 2robber.txt */,
+				A2E9654422D4EEB70016FDC2 /* 3pizza.txt */,
+				A2E9654D22D4EEB70016FDC2 /* 4defend.txt */,
+				A2E9654622D4EEB70016FDC2 /* 5theft.txt */,
+				A2E9654C22D4EEB70016FDC2 /* 6friend.txt */,
+				A2E9654222D4EEB70016FDC2 /* 7mexico.txt */,
+				A2E9654522D4EEB70016FDC2 /* 8flee.txt */,
+				A2E9654022D4EEB60016FDC2 /* 9fly.txt */,
+				A2E9654122D4EEB60016FDC2 /* 10robber_together_get_it.txt */,
+				A2E9654B22D4EEB70016FDC2 /* 11robber_scout.txt */,
+				A2E9654822D4EEB70016FDC2 /* 12robber_alone.txt */,
+				A2E9654922D4EEB70016FDC2 /* 13alone_without_robber.txt */,
+				A2E9654A22D4EEB70016FDC2 /* 14friend_together.txt */,
+				A2E9653F22D4EEB60016FDC2 /* 15friend_scout.txt */,
+			);
+			name = Resources;
+			path = ../Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,24 +200,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2B8770722C2DDA2008FDBB3 /* 4defend.txt in Resources */,
-				A2B8770A22C2DDA2008FDBB3 /* 3pizza.txt in Resources */,
-				A2B8770822C2DDA2008FDBB3 /* 7mexico.txt in Resources */,
-				A2B8771322C2DDA2008FDBB3 /* 5theft.txt in Resources */,
-				A2B8770C22C2DDA2008FDBB3 /* 1opening.txt in Resources */,
-				A2B8771422C2DDA2008FDBB3 /* 8flee.txt in Resources */,
+				A2E9655322D4EEB70016FDC2 /* 3pizza.txt in Resources */,
+				A2E9655122D4EEB70016FDC2 /* 7mexico.txt in Resources */,
+				A2E9655722D4EEB70016FDC2 /* 12robber_alone.txt in Resources */,
+				A2E9654F22D4EEB70016FDC2 /* 9fly.txt in Resources */,
+				A2E9655422D4EEB70016FDC2 /* 8flee.txt in Resources */,
+				A2E9655822D4EEB70016FDC2 /* 13alone_without_robber.txt in Resources */,
+				A2E9655022D4EEB70016FDC2 /* 10robber_together_get_it.txt in Resources */,
+				A2E9655522D4EEB70016FDC2 /* 5theft.txt in Resources */,
 				A2B876E422C1812B008FDBB3 /* LaunchScreen.storyboard in Resources */,
-				A2B8770F22C2DDA2008FDBB3 /* 13alone_without_robber.txt in Resources */,
-				A2B8770B22C2DDA2008FDBB3 /* 10robber_together_get_it.txt in Resources */,
-				A2B8771222C2DDA2008FDBB3 /* 2robber.txt in Resources */,
+				A2E9655622D4EEB70016FDC2 /* 1opening.txt in Resources */,
 				A2B876E122C1812B008FDBB3 /* Assets.xcassets in Resources */,
-				A2B8770622C2DDA2008FDBB3 /* 15friend_scout.txt in Resources */,
-				A2B8770922C2DDA2008FDBB3 /* 12robber_alone.txt in Resources */,
-				A2B8770E22C2DDA2008FDBB3 /* 9fly.txt in Resources */,
-				A2B8770D22C2DDA2008FDBB3 /* 11robber_scout.txt in Resources */,
-				A2B8771022C2DDA2008FDBB3 /* 6friend.txt in Resources */,
-				A2B8771122C2DDA2008FDBB3 /* 14friend_together.txt in Resources */,
+				A2E9655A22D4EEB70016FDC2 /* 11robber_scout.txt in Resources */,
 				A2B8771D22C428CE008FDBB3 /* CYOAScene.storyboard in Resources */,
+				A2E9654E22D4EEB70016FDC2 /* 15friend_scout.txt in Resources */,
+				A2E9655222D4EEB70016FDC2 /* 2robber.txt in Resources */,
+				A2E9655922D4EEB70016FDC2 /* 14friend_together.txt in Resources */,
+				A2E9655B22D4EEB70016FDC2 /* 6friend.txt in Resources */,
+				A2E9655C22D4EEB70016FDC2 /* 4defend.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -37,17 +37,26 @@ class Graph {
         }
     }
     internal func getChoices() -> [Scene]? {
+        var choicesArray: [Scene] = []
         // Iterate over scene keys in sceneVertices
         for scene in sceneVertices {
             // Find the scene whose ID matches the current_scene number
             if scene.key.unique_id == SceneController.shared.currentScene {
             // Return that scene's choices
-                return scene.value
+                choicesArray += scene.value
             }
         }
+        for (index, element) in choicesArray.enumerated() {
+            if element.choice == nil {
+                choicesArray.remove(at: index)
+            }
+            
+        }
+        
         // I'm not sure why it would ever return nil. If it does then we have a problem.
-        return nil
+        return choicesArray
     }
+    
     private func addSceneVertex(vertex: Scene) {
         self.sceneVertices[vertex] = []
     }

@@ -62,15 +62,11 @@ class SceneController {
             count += 1
             print(count)
         }
-        for scene in sceneArray {
-            print(scene.unique_id)
-            print(scene.choice?.name)
-        }
-    }
-    //MARK: Private Methods
-    ///This method will return the scene associated with the selected button's choice text. Enter the tag of the button here and the appropriate scene will be returned.
-    private func getScene(tag: Int) -> Scene {
-        return sceneArray[tag - 1]
     }
     
+    ///This method will change the current scene to the scene associated with the selected button's choice text. It will also return it.
+    internal func changeScene(sceneID: Int) -> Scene {
+        self.currentScene = sceneID
+        return sceneArray[currentScene - 1]
+    }
 }
