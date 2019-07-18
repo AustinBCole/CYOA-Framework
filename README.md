@@ -6,7 +6,7 @@ A framework for Choose Your Own Adventure games.
 1. Set up Trello board
 2. Populate To Do list with MVP features
 3. Put extra features in the backlog list
-4. Add Trello URL to this README.md file
+4. Add Trello URL to this README.md file : https://trello.com/b/H15DbdUA/mexican-treasure
 
 
 ## **MVP Features:**
