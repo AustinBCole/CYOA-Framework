@@ -14,6 +14,7 @@ class Graph {
     static let shared = Graph()
     private init(){}
     
+    ///This dictionary is the graph of scenes. Each scene is a vertex with associated edges.
     private var sceneVertices: [Scene: [Scene]] = [:]
     
     private let adjacencyDictionary: Dictionary = [1: [2], 2: [3, 4, 5], 3: [], 4: [6, 7], 5: [8, 6, 7], 6: [9], 7: [], 8: [11, 12, 13], 9: [14, 15], 10: [], 11: [], 12: [], 13: [], 14: [], 15: []]
@@ -35,6 +36,27 @@ class Graph {
             }
         }
     }
+    internal func getChoices() -> [Scene]? {
+        var choicesArray: [Scene] = []
+        // Iterate over scene keys in sceneVertices
+        for scene in sceneVertices {
+            // Find the scene whose ID matches the current_scene number
+            if scene.key.unique_id == SceneController.shared.currentScene {
+            // Return that scene's choices
+                choicesArray += scene.value
+            }
+        }
+        for (index, element) in choicesArray.enumerated() {
+            if element.choice == nil {
+                choicesArray.remove(at: index)
+            }
+            
+        }
+        
+        // I'm not sure why it would ever return nil. If it does then we have a problem.
+        return choicesArray
+    }
+    
     private func addSceneVertex(vertex: Scene) {
         self.sceneVertices[vertex] = []
     }

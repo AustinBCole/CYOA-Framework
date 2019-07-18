@@ -10,17 +10,22 @@ import UIKit
 
 class SceneViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    //MARK: IBOutlets
     @IBOutlet weak var storyTextLabel: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
-    
+    @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var choicesTableView: IntrinsicTableView!
     @IBOutlet weak var dynamicTVHeight: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         choicesTableView.delegate = self
         choicesTableView.dataSource = self
         storyTextLabel.translatesAutoresizingMaskIntoConstraints = true
         // Do any additional setup after loading the view.
+        Graph.shared.createStoryGraph()
+        choices = Graph.shared.getChoices()!
+        storyTextLabel.text = SceneController.shared.changeScene(sceneID: 1).readSceneFile()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,11 +45,28 @@ class SceneViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.view.layoutIfNeeded()
     }
     
+    //MARK: Private Methods
+    private func updateStoryText(scene: Scene) {
+        storyTextLabel.text = scene.readSceneFile()
+    }
+    private func updateViews(scene: Scene) {
+        updateStoryText(scene: scene)
+        choicesTableView.reloadData()
+    }
+    
     //MARK: Public Variables
     
     
     //MARK: Private Variables
+    private var choices: [Scene]?
+    private var visited:[Int: Bool] = [:]
 
+    ///MARK: IBActions
+    @IBAction func nextButtonTapped(_ sender: Any) {
+        guard let index = choicesTableView.indexPathForSelectedRow?.row, let choices = choices else {return}
+        let scene = SceneController.shared.changeScene(sceneID: choices[index].unique_id)
+        updateViews(scene: scene)
+    }
     //MARK: Tableview Delegate and Data Source Methods
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -52,14 +74,20 @@ class SceneViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        guard let choices = choices else {return 0}
+        return choices.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = choicesTableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         
+        guard let choices = choices else {return cell}
+        
         cell.imageView?.image = UIImage(named: "radioNotToggled")
-        cell.textLabel?.text = "This is a test choice. Let's see if it word wraps appropriately."
+        
+        cell.textLabel?.text = choices[indexPath.row].getChoice()
+        
         cell.textLabel?.lineBreakMode = .byWordWrapping
         cell.textLabel?.numberOfLines = 0
         
