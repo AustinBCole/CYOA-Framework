@@ -37,8 +37,6 @@ class SceneViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLayoutSubviews()
         let height = min(self.view.bounds.size.height, choicesTableView.contentSize.height)
         dynamicTVHeight.constant = height
-        print(height)
-        print(choicesTableView.frame.height)
         self.storyTextLabel.sizeToFit()
         scrollView.setContentOffset(CGPoint(x: 0, y: self.scrollView.contentOffset.y), animated: true)
         self.scrollView.isDirectionalLockEnabled = true
@@ -63,10 +61,22 @@ class SceneViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     ///MARK: IBActions
     @IBAction func nextButtonTapped(_ sender: Any) {
-        guard let index = choicesTableView.indexPathForSelectedRow?.row, let choices = choices else {return}
-        let scene = SceneController.shared.changeScene(sceneID: choices[index].unique_id)
-        updateViews(scene: scene)
+        guard let choices = choices else {return}
+        if let index = choicesTableView.indexPathForSelectedRow?.row {
+            let scene = SceneController.shared.changeScene(sceneID: choices[index].unique_id)
+            updateViews(scene: scene)
+        } else {
+            print(choices[0].unique_id)
+        }
     }
+        
+//        if let index = choicesTableView.indexPathForSelectedRow?.row, let choices = choices {
+//        let scene = SceneController.shared.changeScene(sceneID: choices[index].unique_id)
+//        updateViews(scene: scene)
+//        } else {
+//            print
+//        }
+//    }
     //MARK: Tableview Delegate and Data Source Methods
     
     func numberOfSections(in tableView: UITableView) -> Int {

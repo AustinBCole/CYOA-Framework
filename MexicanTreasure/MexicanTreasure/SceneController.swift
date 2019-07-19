@@ -60,13 +60,15 @@ class SceneController {
                 sceneArray.append(scene)
             }
             count += 1
-            print(count)
         }
     }
     
     ///This method will change the current scene to the scene associated with the selected button's choice text. It will also return it.
-    internal func changeScene(sceneID: Int) -> Scene {
-        self.currentScene = sceneID
+    internal func changeScene(choiceSceneID: Int) -> Scene {
+        self.currentScene = choiceSceneID
         return sceneArray[currentScene - 1]
+    }
+    internal func changeScene(currentSceneID: Int) -> Scene {
+        let choices = Graph.shared.getChoices()
     }
 }

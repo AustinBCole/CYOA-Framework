@@ -16,7 +16,7 @@ class Graph {
     
     ///This dictionary is the graph of scenes. Each scene is a vertex with associated edges.
     private var sceneVertices: [Scene: [Scene]] = [:]
-    
+    private var sceneDictionary: [Int: Scene] = [:]
     private let adjacencyDictionary: Dictionary = [1: [2], 2: [3, 4, 5], 3: [], 4: [6, 7], 5: [8, 6, 7], 6: [9], 7: [], 8: [11, 12, 13], 9: [14, 15], 10: [], 11: [], 12: [], 13: [], 14: [], 15: []]
     
     internal func createStoryGraph() {
@@ -25,6 +25,8 @@ class Graph {
         let sceneArray = SceneController.shared.getSceneArray()
         // Iterate over scenes
         for scene in sceneArray {
+            // Add each scene to the scene dictionary as a value of its ID
+            sceneDictionary[scene.unique_id] = scene
         // Add each scene as a vertex
             addSceneVertex(vertex: scene)
         // Get connected vertices, which will be ints
@@ -39,21 +41,22 @@ class Graph {
     internal func getChoices() -> [Scene]? {
         var choicesArray: [Scene] = []
         // Iterate over scene keys in sceneVertices
-        for scene in sceneVertices {
+        for (scene, adjacentScenes) in sceneVertices {
             // Find the scene whose ID matches the current_scene number
-            if scene.key.unique_id == SceneController.shared.currentScene {
+            if scene.unique_id == SceneController.shared.currentScene {
             // Return that scene's choices
-                choicesArray += scene.value
+                choicesArray += adjacentScenes
             }
         }
-        for (index, element) in choicesArray.enumerated() {
-            if element.choice == nil {
-                choicesArray.remove(at: index)
+        if choicesArray.count == 0 {
+            let nextSceneIDs = adjacencyDictionary[SceneController.shared.currentScene]
+            guard nextSceneIDs?.count != 0 else {
+                return nil
             }
-            
+            guard let sceneID = nextSceneIDs?[0] else {return nil}
+            choicesArray.append(sceneDictionary[sceneID]!)
         }
-        
-        // I'm not sure why it would ever return nil. If it does then we have a problem.
+        // return choicesArray
         return choicesArray
     }
     
